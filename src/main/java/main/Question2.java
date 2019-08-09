@@ -5,8 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
-
+import java.util.Collections;
 public class Question2 {
+private static final int Length = 0;
 public static void main(String[] args) {
 	List<Integer> numbers = new ArrayList<Integer>();
 	Scanner sc = new Scanner(System.in);
@@ -20,7 +21,14 @@ public static void main(String[] args) {
 
 }
 public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
+	List <Integer> L1=new ArrayList<Integer>();
+	L1.addAll(number);
+	//Question2 obj=new Question2();
+	/*int l= obj.Length;
+	for (int i = 0; i <l; i++) {
+	    L1.add(i, number.get(i)); 
+	}
+	*/
 	//write your code here !! change the L1 to required value
 	return L1 ;
 }
